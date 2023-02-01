@@ -1,0 +1,94 @@
+.education{
+  padding: 70px 0;
+  .education-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    .education-item{
+      padding: 0;
+      border-radius: 10px;
+      box-shadow: 0 0 11px -1px silver;
+      transition: .3s;
+      &:hover{
+        margin-top: -15px;
+        margin-bottom: 15px;
+      }
+      img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .max-width{
+        max-width: 133px;
+        margin: 0 auto;
+      }
+      &-info{
+        padding: 20px 15px;
+        h3,p{
+          border-bottom: 1px silver solid;
+          margin-bottom: 10px;
+        }
+        h3{
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 147%;
+          padding-bottom: 3px;
+        }
+        p{
+          font-size: 14px;
+          padding-bottom: 3px;
+        }
+        .certificate-link{
+          display: inline-block;
+          text-decoration: none;
+          background: #10bc82;
+          padding: 10px 9px;
+          margin-top: 20px;
+          border-radius: 10px;
+          color: white;
+          opacity: .7;
+          transition: .3s;
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $content-widthXl) {
+  .education{
+    .education-content{
+      gap: 0 50px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: $content-widthLg) {
+  .education{
+    padding: 50px 0;
+    .education-content{
+      gap: 25px 12px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: $content-widthMd) {
+  .education{
+    padding: 30px 0;
+    .education-content{
+      gap: 25px;
+      grid-template-columns: repeat(1, 1fr);
+      .education-item{
+        max-width: 75%;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+  }
+}

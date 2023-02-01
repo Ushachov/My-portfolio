@@ -1,0 +1,11 @@
+{
+    "photo": "./images/about-me/my-photo.jpg",
+    "firstName" : "Ivan",
+    "lastName" : "Ushachov",
+    "age" : "18",
+    "position" : "Front-end developer",
+    "city" : "Odessa",
+    "number" : "+380973942283",
+    "telegram" : "@VanyaSOmil",
+    "email" : "ushachovg324@gmail.com"
+}

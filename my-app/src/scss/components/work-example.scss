@@ -1,0 +1,96 @@
+.work-example{
+  padding: 70px 0;
+  .slick-initialized{
+    .slick-prev,.slick-next{
+      height: auto;
+      width: auto;
+      &::before{
+        color: #8d8d8d;
+        font-size: 32px;
+      }
+    }
+    .slick-prev{
+      left: -35px;
+    }
+    .slick-next{
+      right: -35px;
+    }
+
+    .slick-track{
+      display: flex;
+      align-items: center;
+
+      *{transition: 1.5s;}
+
+      .slick-slide{
+        .slider-item{
+          margin: 10px;
+          opacity: .3;
+          padding: 20px;
+          background: silver;
+          border-radius: 10px;
+          h3{
+            text-align: center;
+            color: white;
+            margin-bottom: 15px;
+            font-size: 24px;
+          }
+          .github-link{
+            display: block;
+            background: purple;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: max-content;
+            &:hover{
+              transition: .5s;
+              transform: scale(1.05);
+            }
+            &:focus-visible{
+              outline: -webkit-focus-ring-color auto 0;
+            }
+            img{
+              max-width: 110px;
+            }
+          }
+        }
+      }
+      .slick-active{
+        .slider-item{
+          opacity: .6;
+          padding: 30px;
+        }
+      }
+      .slick-center{
+        .slider-item{
+          margin: 10px;
+          opacity: 1;
+          padding: 30px;
+          transform: scale(1.08);
+          transition: 1.5s;
+          background: silver;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $content-widthXl) {
+  .work-example {
+    .slider{
+        max-width: 900px;
+        margin: 0 auto;
+      }
+  }
+}
+
+@media (max-width: $content-widthLg) {
+  .work-example {
+    .slider{
+      padding: 0 32px;
+      .slick-track{
+        height: 175px;
+      }
+    }
+  }
+}

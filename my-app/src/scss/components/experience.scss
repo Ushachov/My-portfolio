@@ -1,0 +1,92 @@
+.experience{
+  padding: 70px 0;
+  &-content{
+    .experience-title{
+      margin-bottom: 20px;
+      font-size: 32px;
+      line-height: 44px;
+      font-weight: 400;
+      text-align: center;
+      color: #1f222a;
+    }
+    .company{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      &-description{
+        width: 50%;
+        p{
+          font-size: 18px;
+          line-height: 26px;
+          font-weight: 400;
+          color: #1f222a;
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+      &-img{
+        width: 50%;
+      }
+    }
+    .my-experience{
+      .my-position,
+      .my-time-work{
+        font-weight: 200;
+        font-style: italic;
+        color: #1f222a;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $content-widthLg) {
+  .experience{
+    padding: 50px 0;
+    &-content{
+      .company{
+        flex-direction: column;
+        &-description{
+          width: 100%;
+          margin-bottom: 25px;
+        }
+        &-img{
+          width: 100%;
+        }
+      }
+      .my-experience{
+        .my-position,
+        .my-time-work{
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $content-widthMd) {
+  .experience{
+    padding: 30px 0;
+    &-content{
+      .experience-title{
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      .company{
+        &-description{
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+      .my-experience{
+        .my-position,
+        .my-time-work{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
+html, body{
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+
+.container{
+  max-width: $content-widthXl;
+  margin: 0 auto ;
+  padding: 0 12px;
+}
+
+.information-title{
+  font-family: 'Caveat', cursive;
+  font-size: 58px;
+  font-style: italic;
+  font-weight: bold;
+  color: #d41c0b;
+  margin-bottom: 30px;
+}
+
+.dark{
+  background: #F4F4F4;
+}
+
+.scroll-toTop{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  color: white;
+  background: orangered;
+  border-radius: 50%;
+  border: 1px solid black;
+  opacity: .7;
+  transition: .3s;
+  cursor: pointer;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+@media (max-width: $content-width) {
+  .container{max-width: $content-widthXl;}
+}
+
+@media (max-width: $content-widthXl) {
+  .container{max-width: $content-widthLg;}
+}
+
+@media (max-width: $content-widthLg) {
+  .container{max-width: $content-widthMd;}
+}
+
+@media (max-width: $content-widthMd) {
+  .container{max-width: $content-widthSm;}
+
+  .information-title{
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+
+  .scroll-toTop{
+    right: 5px;
+    bottom: 5px;
+  }
+
+}
+

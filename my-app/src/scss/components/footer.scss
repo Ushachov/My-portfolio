@@ -1,0 +1,18 @@
+.footer{
+  padding: 20px 0;
+  background: #464451;
+  &-content{
+    .footer-item{
+      p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 147%;
+        color: white;
+        text-align: center;
+      }
+      a{
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
