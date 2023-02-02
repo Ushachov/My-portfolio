@@ -45,8 +45,8 @@ export const WorkExample = () => {
                             </div>
                             <div>
                                 <div className="slider-item">
-                                    <h3>???</h3>
-                                    <BtnGitHubLink/>
+                                    <h3>Contact book</h3>
+                                    <BtnGitHubLink link={"https://github.com/Ushachov/hw-41-ushachov-js"}/>
                                 </div>
                             </div>
                         </Slider>
